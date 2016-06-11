@@ -101,7 +101,7 @@ function getOrder(a, b) {
 }
 
 function ExtractTextPlugin(id, filename, options) {
-	if(isString(filename)) {
+	if(!isString(filename)) {
 		options = filename;
 		filename = id;
 		id = ++nextId;
@@ -146,7 +146,7 @@ ExtractTextPlugin.prototype.loader = function(options) {
 	return ExtractTextPlugin.loader(options);
 };
 
-ExtractTextPlugin.prototype.extract = function(before, loader, options) {
+ExtractTextPlugin.prototype.extract = function(options) {
 	if(arguments.length > 1) {
 		throw new Error("Deprecation notice: extract now only takes a single argument.\n" +
 				"Example: if your old code looked like this:\n" +
