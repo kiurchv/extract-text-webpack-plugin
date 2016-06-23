@@ -1,5 +1,7 @@
 # extract text plugin for webpack
 
+[![Join the chat at https://gitter.im/kiurchv/extract-text-webpack-plugin](https://badges.gitter.im/kiurchv/extract-text-webpack-plugin.svg)](https://gitter.im/kiurchv/extract-text-webpack-plugin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Usage example with css
 
 ``` javascript
